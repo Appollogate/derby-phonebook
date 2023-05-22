@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="phonebook.controllers.ContactImporterController"
+  prefHeight="400.0" prefWidth="600.0">
+
+  <HBox VBox.vgrow="ALWAYS" alignment="CENTER" spacing="40">
+    <padding>
+      <Insets bottom="10" left="20" right="20" top="30"/>
+    </padding>
+    <Label text="Путь до файла"/>
+    <TextField fx:id="filePathTextField" editable="false" onMouseClicked="#onFilePathFieldClicked"
+      HBox.hgrow="ALWAYS"/>
+  </HBox>
+
+  <HBox VBox.vgrow="ALWAYS" alignment="CENTER_RIGHT" spacing="15">
+    <padding>
+      <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    <Button text="Отмена" onAction="#onCancelButtonPressed"/>
+    <Button fx:id="OKButton" text="ОK" onAction="#onOKButtonPressed"/>
+  </HBox>
+
+</VBox>

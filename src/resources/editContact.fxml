@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="phonebook.controllers.FXMLEditContactController"
+  prefHeight="400.0" prefWidth="450.0">
+
+  <HBox>
+    <padding>
+      <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+
+    <VBox alignment="CENTER" HBox.hgrow="ALWAYS" spacing="13">
+      <Label text="Фамилия"/>
+      <Label text="Имя"/>
+      <Label text="Отчество"/>
+      <Label text="Мобильный телефон"/>
+      <Label text="Домашний телефон"/>
+      <Label text="Адрес"/>
+      <Label text="День рождения"/>
+    </VBox>
+
+    <VBox alignment="CENTER" HBox.hgrow="ALWAYS" spacing="5">
+      <TextField fx:id="surnameField" onKeyTyped="#onSurnameFieldChanged"/>
+      <TextField fx:id="nameField" onKeyTyped="#onNameFieldChanged"/>
+      <TextField fx:id="patronymicField" onKeyTyped="#onPatronymicFieldChanged"/>
+      <TextField fx:id="mobilePhoneField" onKeyTyped="#onMobilePhoneFieldChanged"/>
+      <TextField fx:id="homePhoneField" onKeyTyped="#onHomePhoneFieldChanged"/>
+      <TextField fx:id="addressField" onKeyTyped="#onAddressFieldChanged"/>
+      <DatePicker editable="false" fx:id="birthdayDatePicker"/>
+    </VBox>
+  </HBox>
+
+  <HBox>
+    <padding>
+      <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+
+    <TextArea onKeyTyped="#onTextAreaChanged" VBox.vgrow="ALWAYS" fx:id="commentArea"
+      promptText="Введите комментарий... (необязательный параметр)"/>
+  </HBox>
+
+  <HBox alignment="CENTER_RIGHT" spacing="10">
+    <padding>
+      <Insets bottom="10" left="10" right="10"/>
+    </padding>
+
+    <Button text="Сбросить дату" fx:id="buttonClearDate" onAction="#onClearDatePressed"/>
+    <Button text="Отмена" onAction="#onCancelButtonPressed"/>
+    <Button text="Сохранить" fx:id="buttonSave" onAction="#onSaveButtonPressed"/>
+  </HBox>
+
+
+</VBox>

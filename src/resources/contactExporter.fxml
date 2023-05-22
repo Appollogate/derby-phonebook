@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="phonebook.controllers.ContactExporterController">
+
+  <GridPane alignment="CENTER" hgap="50" vgap="20">
+    <padding>
+      <Insets bottom="10" left="10" right="10" top="20"/>
+    </padding>
+    <Label text="Путь до папки" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="directoryPathTextField" editable="false"
+      onMouseClicked="#onDirectoryPathFieldClicked" minWidth="300"
+      GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label text="Имя файла" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="outputFileNameTextField" minWidth="300"
+      GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+  </GridPane>
+
+  <HBox VBox.vgrow="ALWAYS" alignment="CENTER_RIGHT" spacing="15">
+    <padding>
+      <Insets bottom="10" left="10" right="35" top="10"/>
+    </padding>
+    <Button text="Отмена" onAction="#onCancelButtonPressed"/>
+    <Button fx:id="OKButton" text="ОK" onAction="#onOKButtonPressed" minWidth="35"/>
+  </HBox>
+
+</VBox>

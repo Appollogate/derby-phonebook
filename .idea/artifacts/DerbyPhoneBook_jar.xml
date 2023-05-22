@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DerbyPhoneBook:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DerbyPhoneBook_jar</output-path>
+    <root id="archive" name="HW6_198_Skrypina_Daria.jar">
+      <element id="module-output" name="DerbyPhoneBook" />
+    </root>
+  </artifact>
+</component>
