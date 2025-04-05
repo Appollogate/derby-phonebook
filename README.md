@@ -1,34 +1,38 @@
 # Derby Phonebook
 
-**Derby Phonebook** - desktop-приложение, представляющее из себя телефонную книгу с графическим интерфейсом на JavaFX и сохранением данных в локальную БД Apache Derby.
+> 📝 Archived 2023 homework. No longer maintained.
 
-![Главный экран](assets/main_screen.png)
+---
 
-## Основные функции
-* Добавление, просмотр, редактирование и удаление контакной информации:
-    * Фамилия
-    * Имя
-    * Отчество
-    * Мобильный и/или домашний телефон
-    * Адрес
-    * День рождения
-    * Комментарий
+**Derby Phonebook** is a desktop phone book app with a JavaFX interface and local storage using Apache Derby.
 
-![Добавление нового контакта](assets/add_contact.png)
+![Main screen](assets/main_screen.png)
 
-* Поиск контакта по фамилии/имени/отчеству
+## Features
+* Add, view, edit and delete contact details:
+    * Last name
+    * First name
+    * Middle name
+    * Mobile and/or home phone number
+    * Address
+    * Birthday
+    * Notes/comments
 
-![Поиск по контактам](assets/search.png)
+![Adding a new contact](assets/add_contact.png)
 
-* Импорт и экспорт контактов в формате .csv
+* Search contacts by first name, last name, or middle name
 
-![Экспорт контактов](assets/export.png)
+![Contact search](assets/search.png)
 
-* Сохранение контактов между сессиями в локальной базе данных
+* Import and export contacts in .csv format
 
-## Запуск приложения
-Перед запуском приложения необходимо установить [JavaFX SDK 11.0.2](https://gluonhq.com/products/javafx/) и [Apache Derby 10.15.2.0](https://db.apache.org/derby/releases/release-10_15_2_0.cgi), при необходимости указав путь к ним в переменных окружения.
-Для запуска приложения необходимо иметь установленную версию Java 17 или выше.
+![Exporting contacts](assets/export.png)
+
+* Contacts are saved between sessions using a local Apache Derby database.
+
+## Running the Application
+Before launching the app, make sure to install [JavaFX SDK 11.0.2](https://gluonhq.com/products/javafx/) and [Apache Derby 10.15.2.0](https://db.apache.org/derby/releases/release-10_15_2_0.cgi). You may need to add their paths to your environment variables.
+Java 17 or higher is required.
 
 **Windows:**
 ```bat
